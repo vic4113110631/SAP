@@ -1,0 +1,63 @@
+module Controller(con, opcode, CLK, CLR);
+ output con; 
+ input  opcode, CLK, CLR;
+ 
+ wire [3:0]  opcode;
+ reg  [4:0]  ps, ns;
+ reg  [15:0] con;
+ 
+ always@(negedge CLK)
+ begin
+  if(CLR) ps <= 0;
+  else    ps <= ns;
+ end
+ 
+ always@(opcode or ps)
+ begin
+  case(ps)
+  0:begin con = 16'h3E07; ns = 1; end
+  1:begin con = 16'h5E07; ns = 2; end //T1
+  2:begin con = 16'hBE07; ns = 3; end //T2
+  3:begin 
+	  con = 16'h2607;
+	  if(opcode == 0)      begin ns = 4;  end//LDA
+	  else if(opcode == 1) begin ns = 7;  end//ADD
+          else if(opcode == 2) begin ns = 10; end//SUB
+          else if(opcode == 3) begin ns = 13; end//AND
+          else if(opcode == 4) begin ns = 16; end//OR
+	  else if(opcode == 5) begin ns = 19; end//SWAP
+          else if(opcode == 14)begin ns = 22; end//OUT	 
+          else if(opcode == 15)begin ns = 25; end//HLT
+    end //T3
+  //LDA
+  4:begin con = 16'h1A07; ns = 5; end
+  5:begin con = 16'h2C07; ns = 1; end
+  6:begin con = 16'h3E07; ns = 1; end //idling cycle
+  //ADD  
+  7:begin con = 16'h1A07; ns = 8; end
+  8:begin con = 16'h2E03; ns = 9; end
+  9:begin con = 16'h3C0F; ns = 1; end
+  //SUB
+  10:begin con = 16'h1A07; ns = 11; end
+  11:begin con = 16'h2E03; ns = 12; end
+  12:begin con = 16'h3C1F; ns = 1;  end
+  //AND
+  13:begin con = 16'h1A07; ns = 14; end
+  14:begin con = 16'h2E03; ns = 15; end
+  15:begin con = 16'h3C2F; ns = 1;  end
+  //OR
+  16:begin con = 16'h1A07; ns = 17; end
+  17:begin con = 16'h2E03; ns = 18; end
+  18:begin con = 16'h3C3F; ns = 1;  end
+  //SWAP
+  19:begin con = 16'h3F05; ns = 20; end // C <- A
+  20:begin con = 16'h3C87; ns = 21; end // A <- B
+  21:begin con = 16'h3E43; ns = 1;  end // B <- C
+  //OUT
+  22:begin con = 16'h3F06; ns = 1; end
+  //HLT
+  25:begin con = 16'h3E07; ns = 25;end 
+  endcase
+ end
+
+endmodule

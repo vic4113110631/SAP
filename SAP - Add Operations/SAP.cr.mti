@@ -1,0 +1,134 @@
+D:/SAP/ROM.v {1 {vlog -work SAP -stats=none D:/SAP/ROM.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module ROM
+
+Top level modules:
+	ROM
+
+} {} {}} D:/SAP/MAR_TestBench.v {1 {vlog -work work -stats=none D:/SAP/MAR_TestBench.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module MAR_TestBench
+
+Top level modules:
+	MAR_TestBench
+
+} {} {}} D:/SAP/MAR.v {1 {vlog -work SAP -stats=none D:/SAP/MAR.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module MAR
+
+Top level modules:
+	MAR
+
+} {} {}} D:/SAP/SAP_TestBench.v {1 {vlog -work work -stats=none D:/SAP/SAP_TestBench.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module SAP_TestBench
+
+Top level modules:
+	SAP_TestBench
+
+} {} {}} D:/SAP/SAP.v {1 {vlog -work SAP -stats=none D:/SAP/SAP.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module SAP
+
+Top level modules:
+	SAP
+
+} {} {}} D:/SAP/A_TestBench.v {1 {vlog -work work -stats=none D:/SAP/A_TestBench.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module A_TestBench
+
+Top level modules:
+	A_TestBench
+
+} {} {}} D:/SAP/Output_TestBench.v {1 {vlog -work work -stats=none D:/SAP/Output_TestBench.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module Output_TestBench
+
+Top level modules:
+	Output_TestBench
+
+} {} {}} D:/SAP/ALU_TestBench.v {1 {vlog -work work -stats=none D:/SAP/ALU_TestBench.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module ALU_TestBench
+
+Top level modules:
+	ALU_TestBench
+
+} {} {}} D:/SAP/B_TestBench.v {1 {vlog -work work -stats=none D:/SAP/B_TestBench.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module B_TestBench
+
+Top level modules:
+	B_TestBench
+
+} {} {}} D:/SAP/Output.v {1 {vlog -work SAP -stats=none D:/SAP/Output.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module Output
+
+Top level modules:
+	Output
+
+} {} {}} D:/SAP/A.v {1 {vlog -work SAP -stats=none D:/SAP/A.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module A
+
+Top level modules:
+	A
+
+} {} {}} D:/SAP/ALU.v {1 {vlog -work SAP -stats=none D:/SAP/ALU.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/SAP/B.v {1 {vlog -work SAP -stats=none D:/SAP/B.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module B
+
+Top level modules:
+	B
+
+} {} {}} D:/SAP/IR_TestBench.v {1 {vlog -work work -stats=none D:/SAP/IR_TestBench.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module IR_TestBench
+
+Top level modules:
+	IR_TestBench
+
+} {} {}} D:/SAP/PC_TestBench.v {1 {vlog -work work -stats=none D:/SAP/PC_TestBench.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module PC_TestBench
+
+Top level modules:
+	PC_TestBench
+
+} {} {}} D:/SAP/C.v {1 {vlog -work work -stats=none D:/SAP/C.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module C
+
+Top level modules:
+	C
+
+} {} {}} D:/SAP/Controller_TestBench.v {1 {vlog -work work -stats=none D:/SAP/Controller_TestBench.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module Controller_TestBench
+
+Top level modules:
+	Controller_TestBench
+
+} {} {}} D:/SAP/PC.v {1 {vlog -work SAP -stats=none D:/SAP/PC.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} D:/SAP/IR.v {1 {vlog -work SAP -stats=none D:/SAP/IR.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module IR
+
+Top level modules:
+	IR
+
+} {} {}}
